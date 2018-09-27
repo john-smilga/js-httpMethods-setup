@@ -1,0 +1,45 @@
+:root {
+  --mainWhite: #f5f5f5;
+  --mainDark: #333333;
+  --mainOrange: #f15025;
+  --mainGreen: #90a959;
+  --mainRed: #a63d40;
+}
+body {
+  background: var(--mainWhite);
+  color: var(--mainDark);
+}
+.submitBtn {
+  color: var(--mainOrange);
+  border: 0.1rem solid var(--mainOrange);
+  background: transparent;
+  transition: all 0.3 ease-in-out;
+}
+.submitBtn:hover {
+  background: var(--mainOrange);
+  color: var(--mainDark);
+}
+.input-group-text {
+  background: var(--mainOrange);
+}
+.edit-icon {
+  text-decoration: none !important;
+  color: var(--mainGreen);
+}
+.delete-icon {
+  text-decoration: none !important;
+  color: var(--mainRed);
+}
+
+.itemIcon {
+  font-size: 1rem;
+}
+.itemIcon:hover {
+  color: var(--mainDark);
+}
+.feedback {
+  display: none;
+}
+.showItem {
+  display: block;
+}

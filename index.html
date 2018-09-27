@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <!-- bootstrap css -->
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <!-- main css -->
+ <link rel="stylesheet" href="css/main.css">
+ <!-- google fonts -->
+ <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+
+ <!-- font awesome -->
+ <link rel="stylesheet" href="css/all.css">
+ <title>Http Methods</title>
+ <style>
+ </style>
+</head>
+
+<body>
+
+
+ <div class="container">
+  <div class="row">
+   <div class="col col-md-8 mx-auto">
+    <h3 class="text-capitalize text-center mt-3">item form</h3>
+    <div class="feedback alert alert-danger text-capitalize text-center">
+     alert
+    </div>
+    <!-- form -->
+    <form id='httpForm' class="mb-5 mt-3">
+
+     <div class="input-group mb-3">
+      <div class="input-group-prepend">
+       <span class="input-group-text"><i class="fab fa-amazon"></i></span>
+      </div>
+      <input type="text" id='itemInput' class="form-control text-capitalize" placeholder="enter name">
+     </div>
+     <div class="input-group mb-3">
+      <div class="input-group-prepend">
+       <span class="input-group-text"><i class="fas fa-image"></i></span>
+      </div>
+      <input type="text" id='imageInput' class="form-control text-capitalize" placeholder="Image">
+     </div>
+     <button type="submit" id='submitBtn' class="btn submitBtn btn-block text-capitalize">add item</button>
+
+    </form>
+    <!-- end of form -->
+    <!-- list  -->
+    <div class="mt-5">
+     <h3 class="text-capitalize text-center">items</h3>
+     <ul class="list-group items">
+      <!-- single item -->
+      <li class="list-group-item d-flex align-items-center justify-content-between flex-wrap item my-2">
+       <img src="img/default.jpeg" id='itemImage' class='itemImage img-thumbnail' alt="">
+       <h6 id="itemName" class="text-capitalize itemName">item name</h6>
+       <div class="icons">
+
+        <a href='#' class="itemIcon mx-2 edit-icon" data-id=''>
+         <i class="fas fa-edit"></i>
+        </a>
+        <a href='#' class="itemIcon mx-2 delete-icon" data-id=''>
+         <i class="fas fa-trash"></i>
+        </a>
+       </div>
+      </li>
+      <!-- end of single item -->
+     </ul>
+    </div>
+    <!-- end of list -->
+   </div>
+  </div>
+ </div>
+
+
+
+
+
+
+ <!-- jquery -->
+ <script src="js/jquery-3.3.1.min.js"></script>
+ <!-- bootstrap js -->
+ <script src="js/bootstrap.bundle.min.js"></script>
+ <!-- script js -->
+ <script src="js/app.js"></script>
+</body>
+
+</html>
